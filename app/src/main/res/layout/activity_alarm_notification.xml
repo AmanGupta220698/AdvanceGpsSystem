@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.www.advancegpstracking.ui.NotificationModule.AlarmActivity">
+
+
+    <android.support.design.widget.TextInputLayout
+        android:padding="2sp"
+        app:layout_widthPercent="80%"
+        app:layout_marginLeftPercent="10%"
+        app:layout_marginRightPercent="10%"
+        app:layout_marginTopPercent="10%"
+        android:id="@+id/alarm_id"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/alarm_id_module"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter ID"
+            android:drawableLeft="@drawable/ic_menu_send"
+            android:inputType="textWebEmailAddress"
+            android:textColor="@android:color/black"
+            android:maxLines="1"
+
+
+            android:textColorHint="@android:color/black" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:padding="2sp"
+        app:layout_widthPercent="80%"
+        app:layout_marginLeftPercent="10%"
+        app:layout_marginRightPercent="10%"
+
+        android:id="@+id/alarm_latitude"
+        android:layout_below="@id/alarm_id"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/alarm_latitude_module"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Latiude"
+            android:drawableLeft="@drawable/ic_menu_send"
+            android:inputType="textWebEmailAddress"
+            android:textColor="@android:color/black"
+            android:maxLines="1"
+
+
+            android:textColorHint="@android:color/black" />
+    </android.support.design.widget.TextInputLayout>
+
+
+
+    <android.support.design.widget.TextInputLayout
+        android:padding="2sp"
+        app:layout_widthPercent="80%"
+        app:layout_marginLeftPercent="10%"
+        app:layout_marginRightPercent="10%"
+
+        android:id="@+id/alarm_longitude"
+        android:layout_below="@+id/alarm_latitude"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/alarm_longitude_module"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+
+            android:hint="Enter Longitude"
+            android:drawableLeft="@drawable/ic_menu_send"
+            android:inputType="textWebEmailAddress"
+            android:textColor="@android:color/black"
+            android:maxLines="1"
+
+
+            android:textColorHint="@android:color/black" />
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:padding="2sp"
+        app:layout_widthPercent="80%"
+        app:layout_marginLeftPercent="10%"
+        app:layout_marginRightPercent="10%"
+
+        android:id="@+id/alarm_start_range"
+        android:layout_below="@+id/alarm_longitude"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/alarm_start_range_module"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+
+            android:hint="Enter Start Range"
+            android:drawableLeft="@drawable/ic_menu_send"
+            android:inputType="textWebEmailAddress"
+            android:textColor="@android:color/black"
+            android:maxLines="1"
+
+
+            android:textColorHint="@android:color/black" />
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:padding="2sp"
+        app:layout_widthPercent="80%"
+        app:layout_marginLeftPercent="10%"
+        app:layout_marginRightPercent="10%"
+
+        android:id="@+id/alarm_end_range"
+        android:layout_below="@+id/alarm_start_range"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/alarm_end_range_module"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+
+            android:hint="Enter End Range"
+            android:drawableLeft="@drawable/ic_menu_send"
+            android:inputType="textWebEmailAddress"
+            android:textColor="@android:color/black"
+            android:maxLines="1"
+
+
+            android:textColorHint="@android:color/black" />
+    </android.support.design.widget.TextInputLayout>
+    <Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/alarm_insert"
+    android:text="INSERT"
+    android:layout_below="@id/alarm_end_range"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/alarm_view"
+        android:layout_alignParentRight="true"
+        android:text="VIEW"
+        android:layout_below="@id/alarm_end_range"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/alarm_update"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:layout_centerInParent="true"
+        android:text="Update Alarm"
+        android:layout_below="@id/alarm_end_range"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/alarm_delete"
+        android:layout_centerInParent="true"
+
+        android:text="Delete Alarm"
+        android:layout_below="@id/alarm_update"/>
+</android.support.percent.PercentRelativeLayout>

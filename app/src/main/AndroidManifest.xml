@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.www.advancegpstracking">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+
+    <application
+        android:allowBackup="true"
+        android:name=".global.LocationAware"
+        android:icon="@drawable/mapicon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyBLtHX5AelnENrkAzJF1x9Xr03yoXFa9h8" />
+
+        <activity android:name=".ui.DistanceTrackerModule.DistanceTrackerActivity" />
+        <activity android:name=".ui.LocationModule.MyLocationAppActivity" />
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".WelcomeActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.NotificationModule.AlarmActivity"></activity>
+        <activity android:name=".ui.AlarmModule.locationalarm.LocationAlarmActivity"></activity>
+        <activity android:name=".ui.NearbyModule.NearByActivity"></activity>
+        <activity
+            android:name=".ui.AlarmModule.AlarmMainActivity">
+
+        </activity>
+        <service
+            android:name=".bgservice.LocationAwareService"
+            android:exported="false"/>
+<activity android:name=".ui.AlarmModule.alarm.AlarmActivity"></activity>
+        <receiver android:name=".global.BootReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

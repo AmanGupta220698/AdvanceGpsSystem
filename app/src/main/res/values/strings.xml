@@ -1,0 +1,53 @@
+<resources>
+    <string name="app_name">AdvanceGps  </string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_Track">Tracking</string>
+    <string name="action_settings">Setting</string>
+    <string name="navigation_drawer_open">Open Drawer</string>
+    <string name="navigation_drawer_close">Close Drawer</string>
+
+    <string name="next">NEXT</string>
+    <string name="skip">SKIP</string>
+    <string name="start">GOT IT</string>
+
+    <string name="slide_1_title">Hello User!</string>
+    <string name="slide_1_desc">Fun with Map!</string>
+
+    <string name="slide_2_title">Track Location</string>
+    <string name="slide_2_desc">Track your location!</string>
+
+    <string name="slide_3_title">NearBy Places</string>
+    <string name="slide_3_desc">Search Near By Places!</string>
+
+    <string name="slide_4_title">Location Alarm</string>
+    <string name="slide_4_desc">Set Alarm For Location!</string>
+
+    <string name="play_again_desc">To see the welcome slider again, goto Settings -> apps -> welcome slider -> clear data</string>
+    <string name="play_again">Play Again</string>
+    <string name="spinner_title">Normal</string>
+
+
+
+
+    <string name="location_permission_denied">This Application requires location permission to be
+    enabled.
+  </string>
+    <string name="permission_required_toast">Location permission is required for this Application.
+  </string>
+    <string name="permission_rationale_location">Access to the location service is required to get
+    your location details.
+  </string>
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">
+    AIzaSyBHFtFqW2sRt9byXGeVqAkWjYN3hJ2hSdA
+  </string>
+    <string name="title_activity_location_alarm">LocationAlarmActivity</string>
+    <string name="done">Done</string>
+    <string name="cancel">Cancel</string>
+    <string name="check_point_name_hint">Enter a name for this check point</string>
+    <string name="title_activity_alarm">AlarmActivity</string>
+    <string name="location_reached">Location Reached</string>
+    <string name="dismiss">Dismiss</string>
+    <string name="all_check_points">All CheckPoints</string>
+</resources>
